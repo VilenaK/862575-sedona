@@ -19,21 +19,71 @@
 		</nav>
 	</header>
 	
-  <main class="container">
+  <main class="container"> 
 	<h1 class="visually-hidden">Отели в Седона</h1>
+	
+	<section class="filters">
+		<h2 class="visually-hidden">Фильтр отелей</h2>
+		<form class="filter" method="get" action="">
+			<fieldset>
+				<legend>инфраструктура:</legend>
+				<ul>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" 
+						type="checkbox" name="swimmingpool" id="filter-swimmingpool" checked>
+						<label for="filter-swimmingpool">бассейн</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" 
+						type="checkbox" name="parking" id="filter-parking">
+						<label for="filter-parking">парковка</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" 
+						type="checkbox" name="wifi" id="filter-wifi">
+						<label for="filter-wifi">wi-fi</label>
+					</li>
+				</ul>
+				
+			</fieldset>
+	
+			<fieldset>
+				<legend>тип жилья:</legend>
+				<ul>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" 
+						type="checkbox" name="hotel" id="filter-hotel" checked>
+						<label for="filter-hotel">гостиница</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" 
+						type="checkbox" name="motel" id="filter-motel" checked>
+						<label for="filter-motel">мотель</label>
+					</li>
+					<li class="filter-option">
+						<input class="visually-hidden filter-input filter-input-checkbox" 
+						type="checkbox" name="apartment" id="filter-apartment" checked>
+						<label for="filter-apartment">апартаменты</label>
+					</li>
+				</ul>
+			</fieldset>
+		<button type="submit" class="filter-button button">показать
+		</button>	
+		</form>
 	
 	<section class="catalog">
 		<h2 class="visually-hidden">Список найденных отелей</h2>
 		<ul class="catalog-list">
 			<li class="catalog-item">
+				<a href="catalog-item.html">
 				<h3>
-				<a href="catalog-item.html">amara resort & spa</a>
+					<span class="catalog-category">amara resort & spa</span>
 				</h3>
 			<p class="catalog-item-image">
-			<a href="catalog-item.html">
-			<img src="img/Layer 21.jpg" width="" height=""
-				alt="Amara resort & spa">
+				<img src="img/Layer 21.jpg" width="" height=""
+				alt="отель Amara resort & spa">
 			</p>
+			</a>
 			<p class="catalog-item-price">
 			<a class="button" href="catalog-item.html">подробнее</a>
 			<a class="button" href="">забронировать</a>
@@ -50,7 +100,7 @@
 				alt="desert quail inn">
 			</p>
 			<p class="catalog-item-price">
-			<a class="button" href="catalog-item.html">подробнее</a>
+				<a class="button" href="catalog-item.html">подробнее</a>
 			<a class="button" href="">забронировать</a>
 			</p>
 			</li>
@@ -65,7 +115,7 @@
 				alt="villas at poco diablo">
 			</p>
 			<p class="catalog-item-price">
-			<a class="button" href="catalog-item.html">подробнее</a>
+			<a class="button" href="catalog-item.html" >подробнее</a>
 			<a class="button" href="">забронировать</a>
 			</p>
 			</li>
@@ -77,15 +127,15 @@
 		<a class="hashtag" href="#">#visitsedona</a>
 		<div class="footer-social">
 			<ul>
-				<li><a class="social-button" href="#">Twitter</a></li>
-				<li><a class="social-button" href="#">Facebook</a></li>
-				<li><a class="social-button" href="#">Youtube</a></li>
+				<li><a class="social-button" href="#"><img src="img/twitter.svg">Twitter</a></li>
+				<li><a class="social-button" href="#"><img src="img/fb-icon.svg">Facebook</a></li>
+				<li><a class="social-button" href="#"><img src="img/youtube.svg">Youtube</a></li>
 			</ul>
 		</div>
 		
 		<p class="footer-copyright">
 		<p>website by</p>
-		<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+		<a class="button" href="#"><img src="img/logo_name.svg" width="115" height="41" alt="ссылка на сайт HTML Academy">HTML Academy</a>
 		</p>
 	</footer>
 	
