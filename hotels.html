@@ -67,60 +67,108 @@
 					</li>
 				</ul>
 			</fieldset>
+			
+			<fieldset>
+				<legend>Стоимость в сутки (р):</legend>
+				<div class="range">
+				<label for="cost-per-day"></label>
+				<input type="range" min="1" max="14" step="1">
+				<button class="range-btn" type="button">От</button>
+				<button class="range-btn" type="button">До</button>
+			</div>
+			</fieldset>
+			
 		<button type="submit" class="filter-button button">показать
 		</button>	
 		</form>
+		
+		<div class="sorting">
+			<ul class="sorting-list">
+				<li class="sorting-item">
+				<div class="sorting-title">Найдено</div>
+				</li>
+			<li class="sorting-item">Сортировка</li>
+			<li class="sorting-item">
+				<a class="sorting-btn" href="#">По цене</a>
+			</li>
+			<li class="sorting-item">
+				<a class="sorting-btn" href="#">По типу</a>
+			</li>
+			<li class="sorting-item">
+				<a class="sorting-btn" href="#">По рейтингу</a>
+			</li>
+			<li class="sorting-item">
+				<a class="icon-up" href="#"><img src="img/icon-up-dir.svg ">
+				</a>
+				<a class="icon-down" href="#"><img src="img/icon-down-dir.svg">
+				</a>
+				
 	
-	<section class="catalog">
+	<section class="hotels-list">
 		<h2 class="visually-hidden">Список найденных отелей</h2>
-		<ul class="catalog-list">
-			<li class="catalog-item">
-				<a href="catalog-item.html">
-				<h3>
-					<span class="catalog-category">amara resort & spa</span>
+			<div class="hotels-item">
+			<img src="img/Layer 21.jpg" width="" height=""
+				alt="Amara-resort-&-spa-picture">
+			</div>
+			<div class="hotel-name">
+				<h3 class="hotel-name">amara resort & spa
 				</h3>
-			<p class="catalog-item-image">
-				<img src="img/Layer 21.jpg" width="" height=""
-				alt="отель Amara resort & spa">
-			</p>
-			</a>
-			<p class="catalog-item-price">
-			<a class="button" href="catalog-item.html">подробнее</a>
-			<a class="button" href="">забронировать</a>
-			</p>
-			</li>
+			</div>
+			<div class="hotel-info">
+				<span>гостиница</span>
+				<a class="button" href="hotels-item.html">подробнее</a>
+			</div>
+			<div class="hotels-info">
+				<span>от 4000 р.</span>		
+				<a class="button" href="">забронировать</a>
+			</div>
+			<div class="hotel-rating">
+				<div class="hotel-stars+four">Количество звездочек</div>
+				<div class="hotel-rating-text">Рейтинг 8,5</div>
+			</div>
 			
-			<li class="catalog-item">
-				<h3>
-				<a href="catalog-item.html">desert quail inn</a>
-				</h3>
-			<p class="catalog-item-image">
-			<a href="catalog-item.html">
+			<div class="hotels-item">
 			<img src="img/Layer 89 copy.jpg" width="" height=""
-				alt="desert quail inn">
-			</p>
-			<p class="catalog-item-price">
-				<a class="button" href="catalog-item.html">подробнее</a>
-			<a class="button" href="">забронировать</a>
-			</p>
-			</li>
-			
-			<li class="catalog-item">
-				<h3>
-				<a href="catalog-item.html">villas at poco diablo</a>
+				alt="desert-quail-inn-picture">
+			</div>
+			<div class="hotel-name">
+				<h3 class="hotel-name">desert quail inn
 				</h3>
-			<p class="catalog-item-image">
-			<a href="catalog-item.html">
+			</div>
+			<div class="hotel-info">
+				<span>мотель</span>
+				<a class="button" href="hotels-item.html">подробнее</a>
+			</div>
+			<div class="hotels-info">
+				<span>от 3500 р.</span>		
+				<a class="button" href="">забронировать</a>
+			</div>
+			<div class="hotel-rating">
+				<div class="hotel-stars-three">Количество звёзд</div>
+				<div class="hotel-rating-text">Рейтинг 8,9</div>
+			</div>
+
+			<div class="hotels-item">
 			<img src="img/Layer 22.jpg" width="" height=""
-				alt="villas at poco diablo">
-			</p>
-			<p class="catalog-item-price">
-			<a class="button" href="catalog-item.html" >подробнее</a>
-			<a class="button" href="">забронировать</a>
-			</p>
-			</li>
-			
-		</ul>
+				alt="villas-at-poco-diablo-picture">
+			</div>
+			<div class="hotel-name">
+				<h3 class="hotel-name">villas at poco diablo
+				</h3>
+			</div>
+			<div class="hotel-info">
+				<span>апартаменты</span>
+				<a class="button" href="hotels-item.html">подробнее</a>
+			</div>
+			<div class="hotels-info">
+				<span>от 2000 р.</span>		
+				<a class="button" href="">забронировать</a>
+			</div>
+			<div class="hotel-rating">
+				<div class="hotel-stars-two">Количество звёзд</div>
+				<div class="hotel-rating-text">Рейтинг 9,2</div>
+			</div>
+
 	</section>
 	
 	<footer class="main-footer">
