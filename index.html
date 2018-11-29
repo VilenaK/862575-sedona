@@ -93,8 +93,32 @@
 		<section class="registration">
 			<h3>заинтересовались?</h3>
 			<p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<!-- Здесь будет форма -->
-			<button class="button registration-button">найти</button>
+			
+			<div class="searching">
+				<div class="searching form">
+				<h3>Поиск гостиницы в седоне</h3>
+					<form action="" method="post">
+						<label for="checkin">Дата заезда</label>
+						<input type="date" name="checkin date" id="checkin">
+					<br>
+						<label for="checkout">Дата выезда</label>
+						<input type="date" name="checkout date" id="checkout">
+					 <div class="half-width">
+						<label for="adults">Взрослые</label>
+						<input type="number" name="adult amount" id="adults">
+					</div>
+					<br>
+					 <div class="half-width">
+						<label for="children">Дети</label>
+						<input type="number" name="children amount" id="children">
+					</div>
+						<div class="buttons">
+						<input type="submit" value="найти">
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
 			
 		<section class ="modal modal-map">
 		<h3 class="visually-hidden">Карта местонахождения</h3>
