@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
@@ -18,109 +21,124 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="container">
+
+	<main class="main-container">	
+		<h1 class="page-title">Sedona</h1>
+		<div class="banner">
+			<img src="img/intro-welcome.svg" width="250" height="100" alt="Welcome to gorgeous Sedona">
+			<img src="img/background photo.jpg" width="700" height="" alt="Добро пожаловать в Седона">
+		</div>
 	
-	<h1 class="page-title">Sedona</h1>
-	<img src="img/background photo.jpg" width="700" height="" alt="Добро пожаловать в Седона">
-	
-	<section class="main-text">
-		<strong>седона - небольшой городок в аризоне, заслуживающий большего!</strong>
-		<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-	</section>
+		<section class="main-text">
+			<strong>седона - небольшой городок в аризоне,<br>заслуживающий большего!</strong>
+			<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+		</section>
 	
 		<section class="features">
 		<h2 class="visually-hidden">Преимущества</h2>
+		<div class="feature-city">
 		<ul class="features-list">
 			<li class="feature-item">
-			<h3>Настоящий городок</h3>
-			<p>- №1 -</p>
-			<p>седона - не аттракцион для туристов, там течёт своя жизнь</p>
+			<h3>Настоящий <br>городок</h3>
+			<span class="feature-number">- №1 -</span>
+			<p class="feature-text">седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
 			</li>
 		</ul>
-		<img src="img/Layer 10.jpg" width="" height="" alt="Open Range grill & taverna ">
+		</div>
+		<div class="feature-image1">
+			<img src="img/Layer 10.jpg" width="800" height="256" alt="Open Range grill & taverna ">
+		</div>
 		</section>
 		
+		<div class="index-recommend-columns"> 
 		<section class="recommendations">
 		<h2 class="visually-hidden">Рекомендации</h2>
 		<ul class="recommend-list">
 			<li class="recommend-item">
+			<img src="img/icon-1.svg" width="75" height="72" alt="A house">
 			<h3>жилье</h3>
 			<p>рекомендуем пожить в настоящем мотеле, всё, как в кино!</p>
 			</li>
 			
 			<li class="recommend-item">
+			<img src="img/icon-2.svg" width="64" height="76" alt="A hamburger">
 			<h3>еда</h3>
 			<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			</li>
 			
 			<li class="recommend-item">
+	<img src="img/icon-3.svg" width="74" height="70" alt="A gift">
 			<h3>сувениры</h3>
 			<p>не только китайского, но и местного производства!</p>
 			</li>
 		</ul>
-		
-		<img src="img/Layer 5.jpg" width="" height="" alt="Devil´s Bridge  ">
 		</section>
+		</div>
 				
 		<section class="features">
 		<h2 class="visually-hidden">Преимущества</h2>
+		<img src="img/Layer 5.jpg" width="" height="" alt="Devil´s Bridge">
+		<div class="feature-bridge">
 		<ul class="features-list">
 			<li class="feature-item">
 			<h3>там есть мост дьявола</h3>
-			<p>- №2 -</p>
-			<p>да! по нему можно пройти! если, конечно, вы осмелитесь</p>
+			<p class="number">- №2 -</p>
+			<p class="text">да! по нему можно пройти! если, конечно, вы осмелитесь</p>
 			</li>
-			
+		</ul>
+		</div>
+		<div class="index-feature-columns">	
+		<ul class="features-list">
 			<li class="feature-item">
 			<h3>небольшая площадь</h3>
-			<p>- №3 -</p>
-			<p>все достопримечательности находятся очень близко</p>
+			<p class="number">- №3 -</p>
+			<p class="text">все достопримечательности находятся очень близко</p>
 			</li>
 			
 			<li class="feature-item">
 			<h3>красивая дорога</h3>
-			<p>- №4 -</p>
-			<p>ехать в седону из лас-вегаса совсем не скучно!</p>
+			<p class="number">- №4 -</p>
+			<p class="text">ехать в седону из лас-вегаса совсем не скучно!</p>
 			</li>
 			
 			<li class="feature-item">
 			<h3>мало туристов</h3>
-			<p>- №5 -</p>
-			<p>большинство едет в гранд каньон с толпится там</p>
+			<p class="number">- №5 -</p>
+			<p class="text">большинство едет в гранд каньон с толпится там</p>
 			</li>
 		</ul>
+		</div>
 		</section>
 		
-		<section class="registration">
+		<div class="searching">
 			<h3>заинтересовались?</h3>
-			<p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			
-			<div class="searching">
-				<div class="searching form">
-				<h3>Поиск гостиницы в седоне</h3>
-					<form action="" method="post">
-						<label for="checkin">Дата заезда</label>
-						<input type="date" name="checkin date" id="checkin">
-					<br>
-						<label for="checkout">Дата выезда</label>
-						<input type="date" name="checkout date" id="checkout">
-					 <div class="half-width">
-						<label for="adults">Взрослые</label>
-						<input type="number" name="adult amount" id="adults">
-					</div>
-					<br>
-					 <div class="half-width"> 
-						<label for="children">Дети</label>
-						<input type="number" name="children amount" id="children">
-					</div>
-						<div class="buttons">
-						<button type="button" class="button"></button>
-						</div>
-					</form>
-				</div>
-			</div>
+			<p class="searching-info">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+		</div>
+
+	<section class="modal modal-searching">
+		<button class="searching-forma" type="button">поиск гостиницы в седоне
+		</button>
+		<form action="" method="post" class="searching-form">
+			<p class="searching-item">	
+			<label for="checkin">Дата заезда</label>
+			<input type="date" name="checkin date" id="checkin">					
+			</p>
+			<p class="searching-item">	
+			<label for="checkout">Дата выезда</label>
+			<input type="date" name="checkout date" id="checkout">
+			</p>
+			<p class="searching-item">	
+				<label for="adults">Взрослые</label>
+				<input type="number" name="adult amount" id="adults">
+			</p>
+			<p class="searching-item">	
+				<label for="children">Дети</label>
+				<input type="number" name="children amount" id="children">
+			</p>
+			<a class="modal-search" href="#">Найти
+			</a>
 		</section>
-			
+	
 		<section class ="modal modal-map">
 		<h3 class="visually-hidden">Карта местонахождения</h3>
 		<p>
@@ -130,7 +148,7 @@
 	
 	<footer class="main-footer">
 	<div class="footer-hashtag">
-		<a class="hashtag" href="#">#visitsedona</a>
+		<p class="hashtag">#visitsedona</p>
 	</div>
 		<div class="footer-social">
 			<ul>
@@ -141,9 +159,8 @@
 		</div>
 		
 		<div class="footer-copyright">website by
-		<a class="copyright" href="#"><img src="img/logo_name.svg" width="115" height="41" alt="ссылка на сайт HTML Academy">HTML Academy</a>
+		<a class="copyright" href="#"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="ссылка на сайт HTML Academy"></a>
 		</div>
 	</footer>
-
   </body>
 </html>
